@@ -1,0 +1,68 @@
+.container > div {
+    position: absolute;
+    text-align: center;
+}
+
+div.number10:before {
+    content: '10';
+    /*    font-size:5em;*/
+    animation: odliczanie 10s linear 0s 1 normal forwards;
+
+}
+
+div.container {
+    width: 400px;
+    height: 100px;
+    background-color: aqua;
+    color: red;
+    position: relative;
+    font-size: 5em;
+    text-align: center;
+
+}
+
+@keyframes odliczanie {
+
+    0% {
+        font-size: 100%;
+        opacity: 1;
+    }
+    10% {
+        content: "9"
+    }
+    20% {
+        content: "8"
+    }
+    30% {
+        content: "7"
+    }
+    40% {
+        content: "6"
+    }
+    50% {
+        content: "5"
+    }
+    60% {
+        content: "4"
+    }
+    70% {
+        content: "3"
+    }
+    80% {
+        content: "2"
+    }
+    90% {
+        content: "1"
+    }
+    100% {
+        content: "I love CSS"
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
